@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageLicenseUrl>https://github.com/XGNPreTender/PretWorks.Helpers.Result/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/XGNPreTender/PretWorks.Helpers.Result</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/XGNPreTender/PretWorks.Helpers.Result</RepositoryUrl>
+    <Authors>Rob van der Werf</Authors>
+    <Company>PretWorks</Company>
+  </PropertyGroup>
+
+</Project>
