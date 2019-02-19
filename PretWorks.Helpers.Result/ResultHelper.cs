@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using PretWorks.Helpers.Result.Interfaces;
 using PretWorks.Helpers.Result.Models;
 
@@ -93,6 +94,20 @@ namespace PretWorks.Helpers.Result
         public static IResult<TValue> WithKey<TValue>(this IResult<TValue> result, string key, string value)
         {
             result.Keys.Add(key, value);
+
+            return result;
+        }
+
+        /// <summary>
+        /// With exception
+        /// </summary>
+        /// <typeparam name="TValue"></typeparam>
+        /// <param name="result"></param>
+        /// <param name="exception"></param>
+        /// <returns></returns>
+        public static IResult<TValue> WithException<TValue>(this IResult<TValue> result, Exception exception)
+        {
+            result.Messages.Add(exception.ToString());
 
             return result;
         }
