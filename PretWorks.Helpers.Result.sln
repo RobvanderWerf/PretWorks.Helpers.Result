@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PretWorks.Helpers.Result", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PretWorks.Helpers.Result.AutoMapper", "PretWorks.Helpers.Result.AutoMapper\PretWorks.Helpers.Result.AutoMapper.csproj", "{CD05A4C5-59B8-48F8-A2E0-57C4DB5B72D7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PretWorks.Helpers.Result.Tests", "PretWorks.Helpers.Result.Tests\PretWorks.Helpers.Result.Tests.csproj", "{B77672D4-C6F2-402C-822A-ED0C6F30CA1A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{CD05A4C5-59B8-48F8-A2E0-57C4DB5B72D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD05A4C5-59B8-48F8-A2E0-57C4DB5B72D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD05A4C5-59B8-48F8-A2E0-57C4DB5B72D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B77672D4-C6F2-402C-822A-ED0C6F30CA1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B77672D4-C6F2-402C-822A-ED0C6F30CA1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B77672D4-C6F2-402C-822A-ED0C6F30CA1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B77672D4-C6F2-402C-822A-ED0C6F30CA1A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

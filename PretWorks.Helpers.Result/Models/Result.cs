@@ -4,7 +4,7 @@ using PretWorks.Helpers.Result.Interfaces;
 
 namespace PretWorks.Helpers.Result.Models
 {
-    public abstract class Result<TValue> : IResult<TValue>
+    public abstract class Result : IResult
     {
         protected Result(bool success)
         {
@@ -20,7 +20,7 @@ namespace PretWorks.Helpers.Result.Models
 
         public override string ToString()
         {
-            return ToDelimitedString(" ");
+            return ToDelimitedString("");
         }
 
         public string ToDelimitedString(string delimiter)
@@ -36,6 +36,13 @@ namespace PretWorks.Helpers.Result.Models
         }
 
         public Dictionary<string, string> Keys { get; set; } = new Dictionary<string, string>();
+    }
+
+    public abstract class Result<TValue> : Result, IResult<TValue>
+    {
+        protected Result(bool success) : base(success)
+        {
+        }
 
         public TValue Value { get; set; } = default(TValue);
     }

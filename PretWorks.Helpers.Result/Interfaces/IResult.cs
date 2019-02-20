@@ -2,7 +2,7 @@
 
 namespace PretWorks.Helpers.Result.Interfaces
 {
-    public interface IResult<TValue>
+    public interface IResult
     {
         /// <summary>
         /// Result succeeded
@@ -35,8 +35,12 @@ namespace PretWorks.Helpers.Result.Interfaces
         /// <summary>
         /// Optional keys
         /// </summary>
-        Dictionary<string,string> Keys { get; set; }
+        Dictionary<string, string> Keys { get; set; }
+    }
 
+    public interface IResult<TValue> : IResult
+    {
+       
         /// <summary>
         /// The result
         /// </summary>
