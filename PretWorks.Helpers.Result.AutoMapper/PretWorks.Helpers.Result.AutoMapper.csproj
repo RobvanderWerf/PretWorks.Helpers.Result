@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Rob van der Werf</Authors>
+    <Company>PretWorks</Company>
+    <PackageLicenseUrl>https://github.com/XGNPreTender/PretWorks.Helpers.Result/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://resulthelper.pretworks.com</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/XGNPreTender/PretWorks.Helpers.Result</RepositoryUrl>
+    <Description>AutoMapper extension for  PretWorks.Helpers.Result</Description>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PretWorks.Helpers.Result\PretWorks.Helpers.Result.csproj" />
+  </ItemGroup>
+
+</Project>

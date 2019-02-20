@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PretWorks.Helpers.Result", "PretWorks.Helpers.Result\PretWorks.Helpers.Result.csproj", "{CAF76511-5191-453C-9A53-9E91BA21385E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PretWorks.Helpers.Result", "PretWorks.Helpers.Result\PretWorks.Helpers.Result.csproj", "{CAF76511-5191-453C-9A53-9E91BA21385E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PretWorks.Helpers.Result.AutoMapper", "PretWorks.Helpers.Result.AutoMapper\PretWorks.Helpers.Result.AutoMapper.csproj", "{CD05A4C5-59B8-48F8-A2E0-57C4DB5B72D7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{CAF76511-5191-453C-9A53-9E91BA21385E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CAF76511-5191-453C-9A53-9E91BA21385E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CAF76511-5191-453C-9A53-9E91BA21385E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD05A4C5-59B8-48F8-A2E0-57C4DB5B72D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD05A4C5-59B8-48F8-A2E0-57C4DB5B72D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD05A4C5-59B8-48F8-A2E0-57C4DB5B72D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD05A4C5-59B8-48F8-A2E0-57C4DB5B72D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
