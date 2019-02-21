@@ -14,7 +14,13 @@ namespace PretWorks.Helpers.Result.AutoMapper
         /// <returns></returns>
         public static IResult<TValue> WithMappedValue<TValue>(this IResult<TValue> result, object value)
         {
-            result.Value = Mapper.Map<TValue>(result);
+            if (value == null)
+            {
+                result.Value = default(TValue);
+                return result;
+            }
+
+            result.Value = Mapper.Map<TValue>(value);
 
             return result;
         }
