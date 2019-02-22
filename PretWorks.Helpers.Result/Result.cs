@@ -87,12 +87,39 @@ namespace PretWorks.Helpers.Result
         }
 
         /// <summary>
+        /// Add message to result
+        /// </summary>
+        /// <typeparam name="TValue"></typeparam>
+        /// <param name="result"></param>
+        /// <param name="message"></param>
+        /// <returns></returns>
+        public static IResult<TValue> WithMessage<TValue>(this IResult<TValue> result, string message)
+        {
+            result.Messages.Add(message);
+
+            return result;
+        }
+
+        /// <summary>
         /// Add multiple message to result
         /// </summary>
         /// <param name="result"></param>
         /// <param name="messages"></param>
         /// <returns></returns>
         public static IResult WithMessages(this IResult result, List<string> messages)
+        {
+            result.Messages.AddRange(messages);
+
+            return result;
+        }
+
+        /// <summary>
+        /// Add multiple message to result
+        /// </summary>
+        /// <param name="result"></param>
+        /// <param name="messages"></param>
+        /// <returns></returns>
+        public static IResult<TValue> WithMessages<TValue>(this IResult<TValue> result, List<string> messages)
         {
             result.Messages.AddRange(messages);
 
@@ -114,12 +141,39 @@ namespace PretWorks.Helpers.Result
         }
 
         /// <summary>
+        /// Add key / value to result
+        /// </summary>
+        /// <param name="result"></param>
+        /// <param name="key"></param>
+        /// <param name="value"></param>
+        /// <returns></returns>
+        public static IResult<TValue> WithKey<TValue>(this IResult<TValue> result, string key, string value)
+        {
+            result.Keys.Add(key, value);
+
+            return result;
+        }
+
+        /// <summary>
         /// With exception
         /// </summary>
         /// <param name="result"></param>
         /// <param name="exception"></param>
         /// <returns></returns>
         public static IResult WithException(this IResult result, Exception exception)
+        {
+            result.Messages.Add(exception.ToString());
+
+            return result;
+        }
+
+        /// <summary>
+        /// With exception
+        /// </summary>
+        /// <param name="result"></param>
+        /// <param name="exception"></param>
+        /// <returns></returns>
+        public static IResult<TValue> WithException<TValue>(this IResult<TValue> result, Exception exception)
         {
             result.Messages.Add(exception.ToString());
 
