@@ -7,7 +7,7 @@ namespace PretWorks.Helpers.Result.Tests
         [Fact]
         public void IsSuccess()
         {
-            var result = ResultHelper.Success();
+            var result = Result.Success();
 
             Assert.NotNull(result);
             Assert.True(result.Success);
@@ -19,7 +19,7 @@ namespace PretWorks.Helpers.Result.Tests
         [Fact]
         public void IsSuccess_value_empty()
         {
-            var result = ResultHelper.Success<string>();
+            var result = Result.Success<string>();
 
             Assert.NotNull(result);
             Assert.Null(result.Value);
@@ -32,7 +32,7 @@ namespace PretWorks.Helpers.Result.Tests
         [Fact]
         public void IsSuccess_value_set()
         {
-            var result = ResultHelper.Success<string>("test");
+            var result = Result.Success<string>("test");
 
             Assert.NotNull(result);
             Assert.Equal("test",result.Value);
@@ -45,7 +45,7 @@ namespace PretWorks.Helpers.Result.Tests
         [Fact]
         public void IsSuccess_value_set_withValue()
         {
-            var result = ResultHelper.Success<string>()
+            var result = Result.Success<string>()
                                      .WithValue("test");
 
             Assert.NotNull(result);

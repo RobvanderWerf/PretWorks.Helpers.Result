@@ -4,9 +4,9 @@ using PretWorks.Helpers.Result.Interfaces;
 
 namespace PretWorks.Helpers.Result.Models
 {
-    public abstract class Result : IResult
+    public abstract class ResultModel : IResult
     {
-        protected Result(bool success)
+        protected ResultModel(bool success)
         {
             Success = success;
             Failed = !success;
@@ -38,9 +38,9 @@ namespace PretWorks.Helpers.Result.Models
         public Dictionary<string, string> Keys { get; set; } = new Dictionary<string, string>();
     }
 
-    public abstract class Result<TValue> : Result, IResult<TValue>
+    public abstract class ResultModel<TValue> : ResultModel, IResult<TValue>
     {
-        protected Result(bool success) : base(success)
+        protected ResultModel(bool success) : base(success)
         {
         }
 

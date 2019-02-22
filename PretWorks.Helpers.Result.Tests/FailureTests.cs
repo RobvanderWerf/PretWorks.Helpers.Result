@@ -7,7 +7,7 @@ namespace PretWorks.Helpers.Result.Tests
         [Fact]
         public void IsFailure()
         {
-            var result = ResultHelper.Failed();
+            var result = Result.Failed();
 
             Assert.NotNull(result);
             Assert.False(result.Success);
@@ -19,7 +19,7 @@ namespace PretWorks.Helpers.Result.Tests
         [Fact]
         public void IsFailure_WithMessage()
         {
-            var result = ResultHelper.Failed()
+            var result = Result.Failed()
                 .WithMessage("Test");
 
             Assert.NotNull(result);

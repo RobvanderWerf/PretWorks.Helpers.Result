@@ -5,7 +5,7 @@ using PretWorks.Helpers.Result.Models;
 
 namespace PretWorks.Helpers.Result
 {
-    public static class ResultHelper
+    public static class Result
     {
         /// <summary>
         /// Create success result
@@ -13,7 +13,7 @@ namespace PretWorks.Helpers.Result
         /// <returns></returns>
         public static IResult Success()
         {
-            return new SuccessResult();
+            return new SuccessResultModel();
         }
 
         /// <summary>
@@ -23,7 +23,7 @@ namespace PretWorks.Helpers.Result
         /// <returns></returns>
         public static IResult<TValue> Success<TValue>()
         {
-            return new SuccessResult<TValue>();
+            return new SuccessResultModel<TValue>();
         }
 
         /// <summary>
@@ -34,7 +34,7 @@ namespace PretWorks.Helpers.Result
         /// <returns></returns>
         public static IResult<TValue> Success<TValue>(TValue value)
         {
-            return new SuccessResult<TValue>
+            return new SuccessResultModel<TValue>
             {
                 Value = value
             };
@@ -46,7 +46,7 @@ namespace PretWorks.Helpers.Result
         /// <returns></returns>
         public static IResult Failed()
         {
-            return new FailedResult();
+            return new FailedResultModel();
         }
 
         /// <summary>
@@ -56,7 +56,7 @@ namespace PretWorks.Helpers.Result
         /// <returns></returns>
         public static IResult<TValue> Failed<TValue>()
         {
-            return new FailedResult<TValue>();
+            return new FailedResultModel<TValue>();
         }
 
         /// <summary>

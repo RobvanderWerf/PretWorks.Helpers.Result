@@ -34,7 +34,7 @@ namespace PretWorks.Helpers.Result.Tests
                 Name = "Test model 1"
             };
 
-            var result = ResultHelper.Success<Model2>()
+            var result = Result.Success<Model2>()
                                      .WithMappedValue(model1);
 
             Assert.NotNull(result);
