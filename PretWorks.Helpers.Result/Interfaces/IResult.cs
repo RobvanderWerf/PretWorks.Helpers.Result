@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace PretWorks.Helpers.Result.Interfaces
 {
@@ -36,6 +37,8 @@ namespace PretWorks.Helpers.Result.Interfaces
         /// Optional keys
         /// </summary>
         Dictionary<string, string> Keys { get; set; }
+
+        Exception Exception { get; set; }
     }
 
     public interface IResult<TValue> : IResult

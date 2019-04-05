@@ -162,6 +162,7 @@ namespace PretWorks.Helpers.Result
         /// <returns></returns>
         public static IResult WithException(this IResult result, Exception exception)
         {
+            result.Exception = exception;
             result.Messages.Add(exception.ToString());
 
             return result;
@@ -175,6 +176,7 @@ namespace PretWorks.Helpers.Result
         /// <returns></returns>
         public static IResult<TValue> WithException<TValue>(this IResult<TValue> result, Exception exception)
         {
+            result.Exception = exception;
             result.Messages.Add(exception.ToString());
 
             return result;

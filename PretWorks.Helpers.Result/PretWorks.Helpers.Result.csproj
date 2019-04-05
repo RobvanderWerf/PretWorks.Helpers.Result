@@ -2,15 +2,15 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageLicenseUrl>https://github.com/XGNPreTender/PretWorks.Helpers.Result/blob/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://resulthelper.pretworks.com</PackageProjectUrl>
     <RepositoryUrl>https://github.com/XGNPreTender/PretWorks.Helpers.Result</RepositoryUrl>
     <Authors>Rob van der Werf</Authors>
     <Company>PretWorks</Company>
-    <AssemblyVersion>1.0.1.0</AssemblyVersion>
-    <FileVersion>1.0.1.0</FileVersion>
-    <Version>1.0.1</Version>
+    <AssemblyVersion>1.0.1.1</AssemblyVersion>
+    <FileVersion>1.0.1.1</FileVersion>
+    <Version>1.0.1.1</Version>
   </PropertyGroup>
 
 </Project>
