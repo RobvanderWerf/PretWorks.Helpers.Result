@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Text;
 using PretWorks.Helpers.Result.Interfaces;
 
@@ -36,6 +37,8 @@ namespace PretWorks.Helpers.Result.Models
         }
 
         public Dictionary<string, string> Keys { get; set; } = new Dictionary<string, string>();
+
+        public Exception Exception { get; set; }
     }
 
     public abstract class ResultModel<TValue> : ResultModel, IResult<TValue>
