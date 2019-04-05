@@ -9,6 +9,7 @@
     <RepositoryUrl>https://github.com/XGNPreTender/PretWorks.Helpers.Result</RepositoryUrl>
     <Description>AutoMapper extension for  PretWorks.Helpers.Result</Description>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
